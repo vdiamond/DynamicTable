@@ -1,0 +1,11 @@
+id1@Int32,id2@String,id3@String,id4@String,id5@Double,id6@Double,id7@Double,id8@Double
+0,id20,id30,id40,0,0,0,0
+1,id21,id31,id41,5,6,7,8
+2,id22,id32,id42,10,12,14,16
+3,id23,id33,id43,15,18,21,24
+4,id24,id34,id44,20,24,28,32
+5,id25,id35,id45,25,30,35,40
+6,id26,id36,id46,30,36,42,48
+7,id27,id37,id47,35,42,49,56
+8,id28,id38,id48,40,48,56,64
+9,id29,id39,id49,45,54,63,72
