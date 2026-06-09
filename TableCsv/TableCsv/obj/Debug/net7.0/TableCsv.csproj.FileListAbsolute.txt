@@ -1,0 +1,15 @@
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\bin\Debug\net7.0\TableCsv.deps.json
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\bin\Debug\net7.0\TableCsv.dll
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\bin\Debug\net7.0\TableCsv.pdb
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\bin\Debug\net7.0\Table.dll
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\bin\Debug\net7.0\Table.pdb
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\obj\Debug\net7.0\TableCsv.csproj.AssemblyReference.cache
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\obj\Debug\net7.0\TableCsv.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\obj\Debug\net7.0\TableCsv.AssemblyInfoInputs.cache
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\obj\Debug\net7.0\TableCsv.AssemblyInfo.cs
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\obj\Debug\net7.0\TableCsv.csproj.CoreCompileInputs.cache
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\obj\Debug\net7.0\TableCsv.csproj.CopyComplete
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\obj\Debug\net7.0\TableCsv.dll
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\obj\Debug\net7.0\refint\TableCsv.dll
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\obj\Debug\net7.0\TableCsv.pdb
+C:\Users\Vic\OneDrive - azure4smb\Workspace\source_code\TableCsv\TableCsv\obj\Debug\net7.0\ref\TableCsv.dll
