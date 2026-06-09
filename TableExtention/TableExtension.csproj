@@ -7,8 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\TableCsv\TableCsv\TableCsv.csproj" />
-    <ProjectReference Include="..\..\Table\Table\Table.csproj" />
+    <ProjectReference Include="..\TableCsv\TableCsv\TableCsv.csproj" />
+    <ProjectReference Include="..\Table\Table\Table.csproj" />
   </ItemGroup>
 
 </Project>
