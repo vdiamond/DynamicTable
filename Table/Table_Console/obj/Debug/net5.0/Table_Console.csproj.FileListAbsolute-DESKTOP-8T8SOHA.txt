@@ -1,5 +1,0 @@
-C:\Users\victo\OneDrive - azure4smb\Workspace\source code\Table\Table_Console\obj\Debug\net5.0\Table_Console.csprojAssemblyReference.cache
-C:\Users\victo\OneDrive - azure4smb\Workspace\source code\Table\Table_Console\obj\Debug\net5.0\Table_Console.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\victo\OneDrive - azure4smb\Workspace\source code\Table\Table_Console\obj\Debug\net5.0\Table_Console.AssemblyInfoInputs.cache
-C:\Users\victo\OneDrive - azure4smb\Workspace\source code\Table\Table_Console\obj\Debug\net5.0\Table_Console.AssemblyInfo.cs
-C:\Users\victo\OneDrive - azure4smb\Workspace\source code\Table\Table_Console\obj\Debug\net5.0\Table_Console.csproj.CoreCompileInputs.cache

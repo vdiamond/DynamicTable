@@ -1,8 +1,0 @@
-C:\Users\victo\OneDrive\source_code\Core\Table\Table\bin\Debug\netcoreapp2.0\Table.deps.json
-C:\Users\victo\OneDrive\source_code\Core\Table\Table\bin\Debug\netcoreapp2.0\Table.dll
-C:\Users\victo\OneDrive\source_code\Core\Table\Table\bin\Debug\netcoreapp2.0\Table.pdb
-C:\Users\victo\OneDrive\source_code\Core\Table\Table\obj\Debug\netcoreapp2.0\Table.AssemblyInfoInputs.cache
-C:\Users\victo\OneDrive\source_code\Core\Table\Table\obj\Debug\netcoreapp2.0\Table.AssemblyInfo.cs
-C:\Users\victo\OneDrive\source_code\Core\Table\Table\obj\Debug\netcoreapp2.0\Table.csproj.CoreCompileInputs.cache
-C:\Users\victo\OneDrive\source_code\Core\Table\Table\obj\Debug\netcoreapp2.0\Table.dll
-C:\Users\victo\OneDrive\source_code\Core\Table\Table\obj\Debug\netcoreapp2.0\Table.pdb
