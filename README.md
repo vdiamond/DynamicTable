@@ -20,7 +20,7 @@ TableExtension →  Extra helpers (sort, join, filter, DataTable interop, and mo
 |---------|--------|--------------|
 | **Table** | `Table/Table/` | Create and manipulate in-memory tables with typed columns |
 | **TableCsv** | `TableCsv/TableCsv/` | Load CSV files into a table and write tables back to CSV |
-| **TableExtension** | `TableExtension/` | Convenient extension methods for common data tasks |
+| **TableExtension** | `TableExtension/TableExtension/` | Convenient extension methods for common data tasks |
 
 All libraries target **.NET 10**.
 
@@ -302,10 +302,10 @@ DynamicTable/
 │   ├── TableCsv/           ← CSV library
 │   ├── TableCsv_Console/   ← CSV read/write demo
 │   └── TableCsv_Test/      ← unit tests
-├── TableExtension/         ← extension methods library
-│   ├── TableExtension.csproj
-│   ├── TableExtension.sln
-│   └── Util.cs
+├── TableExtension/
+│   ├── TableExtension/           ← extension methods library
+│   ├── TableExtension_Console/   ← extension demo
+│   └── TableExtension_Test/      ← unit tests
 ├── .grok/rules/            ← AI assistant project rules
 ├── LICENSE
 └── README.md
@@ -320,7 +320,7 @@ DynamicTable/
 ```bash
 dotnet build Table/Table/Table.csproj
 dotnet build TableCsv/TableCsv/TableCsv.csproj
-dotnet build TableExtension/TableExtension.csproj
+dotnet build TableExtension/TableExtension/TableExtension.csproj
 ```
 
 ### Run the demo apps
@@ -328,6 +328,7 @@ dotnet build TableExtension/TableExtension.csproj
 ```bash
 dotnet run --project Table/Table_Console/Table_Console.csproj
 dotnet run --project TableCsv/TableCsv_Console/TableCsv_Console.csproj
+dotnet run --project TableExtension/TableExtension_Console/TableExtension_Console.csproj
 ```
 
 ### Run tests
@@ -335,6 +336,7 @@ dotnet run --project TableCsv/TableCsv_Console/TableCsv_Console.csproj
 ```bash
 dotnet test Table/Table_Test/Table_Test.csproj
 dotnet test TableCsv/TableCsv_Test/TableCsv_Test.csproj
+dotnet test TableExtension/TableExtension_Test/TableExtension_Test.csproj
 ```
 
 ### Reference in your own project
@@ -345,7 +347,7 @@ Add a project reference in your `.csproj`:
 <ItemGroup>
   <ProjectReference Include="path\to\Table\Table\Table.csproj" />
   <ProjectReference Include="path\to\TableCsv\TableCsv\TableCsv.csproj" />
-  <ProjectReference Include="path\to\TableExtension\TableExtension.csproj" />
+  <ProjectReference Include="path\to\TableExtension\TableExtension\TableExtension.csproj" />
 </ItemGroup>
 ```
 

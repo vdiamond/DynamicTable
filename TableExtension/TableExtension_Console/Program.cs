@@ -1,0 +1,1 @@
+Console.WriteLine("Place for TableExtension examples");
