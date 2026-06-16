@@ -20,7 +20,7 @@
   <ItemGroup>
     <ProjectReference Include="..\..\Table\Table\Table.csproj" />
     <ProjectReference Include="..\..\TableCsv\TableCsv\TableCsv.csproj" />
-    <ProjectReference Include="..\TableExtension.csproj" />
+    <ProjectReference Include="..\TableExtension\TableExtension.csproj" />
   </ItemGroup>
 
 </Project>

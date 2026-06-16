@@ -5,7 +5,7 @@ VisualStudioVersion = 17.6.33815.320
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TableExtension_Test", "TableExtension_Test.csproj", "{B4E8F2A1-9C3D-4F6E-8A2B-1D5E7F9C0A3B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TableExtension", "..\TableExtension.csproj", "{DA2D18DF-55A2-43D5-85F8-82F7DF65DD09}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TableExtension", "..\TableExtension\TableExtension.csproj", "{DA2D18DF-55A2-43D5-85F8-82F7DF65DD09}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Table", "..\..\Table\Table\Table.csproj", "{7CFC9249-C0DC-499A-B811-576745F1A71D}"
 EndProject

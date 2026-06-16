@@ -8,7 +8,7 @@ This repository is a C# library suite for in-memory, column-oriented tabular dat
 |--------|---------|
 | `Table/Table/` | Core library — `DynamicTable`, `IColumn`, `IRow`, `IDynamicTable`, etc. |
 | `TableCsv/TableCsv/` | CSV read/write built on the core `Table` library |
-| `TableExtension/` | Extension methods (`UtilExtensions`) for CSV loading, joins, sorting, `DataTable` interop, and POCO mapping |
+| `TableExtension/TableExtension/` | Extension methods (`UtilExtensions`) for CSV loading, joins, sorting, `DataTable` interop, and POCO mapping |
 
 Each component has its own solution (`.sln`), plus optional `_Test` (xUnit) and `_Console` projects. There is no root-level solution — build the relevant project or solution for the area you are changing.
 
@@ -44,7 +44,7 @@ Build a specific library:
 ```bash
 dotnet build Table/Table/Table.csproj
 dotnet build TableCsv/TableCsv/TableCsv.csproj
-dotnet build TableExtension/TableExtension.csproj
+dotnet build TableExtension/TableExtension/TableExtension.csproj
 ```
 
 Run tests:
@@ -52,6 +52,7 @@ Run tests:
 ```bash
 dotnet test Table/Table_Test/Table_Test.csproj
 dotnet test TableCsv/TableCsv_Test/TableCsv_Test.csproj
+dotnet test TableExtension/TableExtension_Test/TableExtension_Test.csproj
 ```
 
 Run console demos:
@@ -59,6 +60,7 @@ Run console demos:
 ```bash
 dotnet run --project Table/Table_Console/Table_Console.csproj
 dotnet run --project TableCsv/TableCsv_Console/TableCsv_Console.csproj
+dotnet run --project TableExtension/TableExtension_Console/TableExtension_Console.csproj
 ```
 
 Prefer `dotnet build -c Release` before validating performance-sensitive changes.
@@ -80,7 +82,7 @@ Prefer `dotnet build -c Release` before validating performance-sensitive changes
 ## Working with Grok
 
 - Before implementing features, read the relevant interfaces in `Table/Table/ITable.cs` and the concrete types they bind to.
-- When adding table operations, check whether an extension already exists in `TableExtension/Util.cs` before creating duplicates.
+- When adding table operations, check whether an extension already exists in `TableExtension/TableExtension/Util.cs` before creating duplicates.
 - For CSV changes, coordinate updates across `TableCsv` parsers and any `LoadCsv`/`WriteCsv` extensions.
 - Run the appropriate `dotnet test` project after changes to core column/row behavior or CSV parsing.
 - Use `grok inspect` to verify loaded project rules.
