@@ -123,6 +123,14 @@ namespace TableCsv
                     break;
                 default:
                     _create(table, columns, fields, prefix, attr);
+                    {
+                        IRow row = table.rows.NewRow();
+                        for (int c = 0; c < columns.Length; c++)
+                        {
+                            row.SetFieldAsString(columns[c].Name, fields[c]);
+                        }
+                    }
+                    res = cfr.ReadRow(fields);
                     break;
             }
 

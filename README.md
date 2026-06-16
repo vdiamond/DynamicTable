@@ -13,16 +13,16 @@ This project is split into three libraries. Each one builds on the previous laye
 ```
 Table          →  Core in-memory table (columns + rows)
 TableCsv       →  Read and write CSV files into a table
-TableExtention →  Extra helpers (sort, join, filter, DataTable interop, and more)
+TableExtension →  Extra helpers (sort, join, filter, DataTable interop, and more)
 ```
 
 | Library | Folder | What it does |
 |---------|--------|--------------|
 | **Table** | `Table/Table/` | Create and manipulate in-memory tables with typed columns |
 | **TableCsv** | `TableCsv/TableCsv/` | Load CSV files into a table and write tables back to CSV |
-| **TableExtention** | `TableExtention/` | Convenient extension methods for common data tasks |
+| **TableExtension** | `TableExtension/` | Convenient extension methods for common data tasks |
 
-All libraries target **.NET 8**.
+All libraries target **.NET 10**.
 
 ---
 
@@ -173,16 +173,14 @@ while (csvReader.ReadRow(row))
 
 ---
 
-## TableExtention — power tools for your tables
+## TableExtension — power tools for your tables
 
-> **Note:** The folder is spelled `TableExtention` (not "Extension").
-
-TableExtention adds extension methods to `IDynamicTable`, `IColumn`, `IRow`, and related types. Reference this library when you need more than basic create/read/write.
+TableExtension adds extension methods to `IDynamicTable`, `IColumn`, `IRow`, and related types. Reference this library when you need more than basic create/read/write.
 
 Add the namespace:
 
 ```csharp
-using TableExtention;
+using TableExtension;
 ```
 
 ### CSV shortcuts
@@ -304,7 +302,7 @@ DynamicTable/
 │   ├── TableCsv/           ← CSV library
 │   ├── TableCsv_Console/   ← CSV read/write demo
 │   └── TableCsv_Test/      ← unit tests
-├── TableExtention/         ← extension methods library
+├── TableExtension/         ← extension methods library
 │   ├── TableExtension.csproj
 │   ├── TableExtension.sln
 │   └── Util.cs
@@ -322,7 +320,7 @@ DynamicTable/
 ```bash
 dotnet build Table/Table/Table.csproj
 dotnet build TableCsv/TableCsv/TableCsv.csproj
-dotnet build TableExtention/TableExtension.csproj
+dotnet build TableExtension/TableExtension.csproj
 ```
 
 ### Run the demo apps
@@ -347,11 +345,11 @@ Add a project reference in your `.csproj`:
 <ItemGroup>
   <ProjectReference Include="path\to\Table\Table\Table.csproj" />
   <ProjectReference Include="path\to\TableCsv\TableCsv\TableCsv.csproj" />
-  <ProjectReference Include="path\to\TableExtention\TableExtension.csproj" />
+  <ProjectReference Include="path\to\TableExtension\TableExtension.csproj" />
 </ItemGroup>
 ```
 
-You only need **Table** for basic in-memory work. Add **TableCsv** for file I/O. Add **TableExtention** when you want the helper methods.
+You only need **Table** for basic in-memory work. Add **TableCsv** for file I/O. Add **TableExtension** when you want the helper methods.
 
 ---
 
