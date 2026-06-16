@@ -25,16 +25,19 @@ tab.columns.NewColumn("id7", TypeCode.Double);
 tab.columns.NewColumn("id8", TypeCode.Double);
 for (int i = 0; i < 10; i++) {  TestCreateRow(tab, i); }
 
-var fw = new CsvFileWriter(@"..\test.csv");
-CsvTable.Write(fw, tab, CsvHeaderType.TypedHeader);
-fw.Dispose();
+using (var sw = new StreamWriter(@"..\test.csv"))
+{
+    CsvTable.Write(new CsvWriter(sw), tab, CsvHeaderType.TypedHeader);
+}
 
-var fr = new CsvFileReader(@"..\test.csv");
 var rtab = new DynamicTable();
-CsvTable.Read(fr, rtab, CsvHeaderType.TypedHeader, "");
-fr.Dispose();
+using (var sr = new StreamReader(@"..\test.csv"))
+{
+    CsvTable.Read(new CsvReader(sr), rtab, CsvHeaderType.TypedHeader, "");
+}
 
-var fwo = new CsvFileWriter(@"..\testr.csv");
-CsvTable.Write(fwo, rtab, CsvHeaderType.TypedHeader);
-fwo.Dispose();
+using (var swOut = new StreamWriter(@"..\testr.csv"))
+{
+    CsvTable.Write(new CsvWriter(swOut), rtab, CsvHeaderType.TypedHeader);
+}
 

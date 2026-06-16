@@ -10,7 +10,7 @@ using System.Data;
 using System.ComponentModel;
 using System.Reflection;
 
-namespace TableExtention
+namespace TableExtension
 {
     public class ColumnTransform
     {
