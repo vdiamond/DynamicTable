@@ -136,6 +136,19 @@ namespace TableExtension
                 cols[i] = (IColumn<V>) main.columns.NewColumn(newColumnName, Type.GetTypeCode(typeof(V)));
             }
 
+            // Unmatched doubles must be NaN, not 0.0, so fill-forward can keep real zeros.
+            if (typeof(V) == typeof(double))
+            {
+                var nan = (V)(object)double.NaN;
+                for (int c = 0; c < cols.Length; c++)
+                {
+                    for (int r = 0; r < cols[c].Count; r++)
+                    {
+                        cols[c][r] = nan;
+                    }
+                }
+            }
+
             // loop through source columns
             for (int i = 0; i < sourceKey.Count; i++)
             {

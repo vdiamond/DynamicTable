@@ -38,5 +38,27 @@ namespace TableExtension_Test
 
             Assert.AreEqual("Need to have at least one column to add", ex.Message);
         }
+
+        [TestMethod]
+        public void LeftJoin_UnmatchedDouble_IsNaNNotZero()
+        {
+            var main = TestHelpers.CreateMainTable();
+            var lookup = new DynamicTable();
+            lookup.columns.NewColumn("Id", TypeCode.Int32);
+            lookup.columns.NewColumn("Px", TypeCode.Double);
+            var matchedZero = lookup.rows.NewRow();
+            matchedZero.SetField("Id", 1);
+            matchedZero.SetField("Px", 0.0);
+            var matchedValue = lookup.rows.NewRow();
+            matchedValue.SetField("Id", 2);
+            matchedValue.SetField("Px", 10.5);
+
+            var destKey = main.BuildKey((IColumn<int>)main.columns["Id"]);
+            main.LeftJoin(destKey, (IColumn<int>)lookup.columns["Id"], "lkp", (IColumn<double>)lookup.columns["Px"]);
+
+            Assert.AreEqual(0.0, main.rows[0].GetField<double>("lkp.Px"));
+            Assert.AreEqual(10.5, main.rows[1].GetField<double>("lkp.Px"));
+            Assert.IsTrue(double.IsNaN(main.rows[2].GetField<double>("lkp.Px")));
+        }
     }
 }
