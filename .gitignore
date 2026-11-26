@@ -8,6 +8,8 @@
 *.suo
 *.userosscache
 *.sln.docstates
+*.vsidx
+storage.ide
 
 # Agent/tooling artifacts
 agent-tools/
