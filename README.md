@@ -4,6 +4,8 @@ A lightweight .NET library for working with tabular data in memory — like a sp
 
 Think of it as a simpler, faster alternative to `System.Data.DataTable`, with strongly typed columns and a small set of focused libraries you can use together or on their own.
 
+Agent guidance is in [AGENTS.md](AGENTS.md).
+
 ---
 
 ## What's in this repository?
@@ -203,7 +205,7 @@ table.WriteCsv("output.csv", CsvHeaderType.TypedHeader);
 var adults = table.SelectFrom(r => table.columns["Age"].GetField<int>(r) > 25);
 
 // Sort by Score (ascending) — returns a new table
-var sorted = table.Sort<double>((IColumn<double>)table.columns["Score"]);
+var sorted = table.Sort<double>(table.columns["Score"]);
 
 // Take rows 10–19
 var slice = table.GetSubTable(start: 10, length: 10);
@@ -306,7 +308,8 @@ DynamicTable/
 │   ├── TableExtension/           ← extension methods library
 │   ├── TableExtension_Console/   ← extension demo
 │   └── TableExtension_Test/      ← unit tests
-├── .grok/rules/            ← AI assistant project rules
+├── .cursor/rules/          ← coding standards for Cursor agents
+├── AGENTS.md               ← agent guidance
 ├── LICENSE
 └── README.md
 ```
